@@ -1,62 +1,17 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
     <title>Calendar</title>
-    <link rel="stylesheet" href="calendar.css">
-</head>
-<body>
-    <div class="wrapper"></div>
-    <div class="cal"></div>
-    <div class="up"></div>
-    <div class="btn-group">
-        <span>
-        <button class="btn-group" id="button1" style="width: 90px; color: dimgrey">
-            <script>
-            let month = ["January", "February", "March", "April", "May", "June",
-                "July", "August", "September", "October", "November", "December"];
-            let now = new Date();
-            document.getElementById("button1").textContent = month[now.getMonth()];
-        </script></button>
-        <button class="btn-group" id="button2" style="width: 90px; margin-left: 95px">
-            <script>
-                var i;
-                if (now.getMonth() + 1 > 12) {i = 12 - now.getMonth()} else {i = now.getMonth() + 1};
-                document.getElementById("button2").textContent = month[i];
-            </script>
-        </button>
-        <button class="btn-group" id="button3" style="width: 90px; margin-left: 190px">
-            <script>
-                var i;
-                if (now.getMonth() + 2 > 12) {i = 12 - now.getMonth()} else {i = now.getMonth() + 2};
-                document.getElementById("button3").textContent = month[i];
-            </script>
-        </button>
-        <button class="btn-group" id="button4" style="width: 90px; margin-left: 285px">
-            <script>
-                var i;
-                if (now.getMonth() + 3 > 12) {i = 12 - now.getMonth()} else {i = now.getMonth() + 3};
-                document.getElementById("button4").textContent = month[i];
-            </script>
-        </button>
-        <button class="btn-group" id="button5" style="width: 90px; margin-left: 370px">
-            <script>
-                var i;
-                if (now.getMonth() + 4 > 12) {i = 12 - now.getMonth()} else {i = now.getMonth() + 4};
-                document.getElementById("button5").textContent = month[i];
-            </script>
-        </button>
-        <button class="btn-group" id="button6" style="width: 90px; margin-left: 465px;">
-            <script>
-                var i;
-                if (now.getMonth() + 5 > 12) {i = 12 - now.getMonth()} else {i = now.getMonth() + 5};
-                document.getElementById("button6").textContent = month[i];
-            </script>
-        </button>
-            </span>
-
+    <link rel="stylesheet" href="calendar.css" />
+  </head>
+  <body>
+    <div class="cal">
+      <div class="up">
+        <button class="btn">February</button>
+        <button class="btn">March</button>
+        <button class="btn">April</button>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>
