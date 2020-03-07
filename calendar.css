@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrap-window {
+  position: absolute;
+  margin: 2% 10% 5% 10%;
+  width: 80%;
+  height: 90%;
+  background-color: #fff;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.cal-wind__upper-bar-months {
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  padding-left: 5px;
+  font-family: Oxygen;
+  font-style: normal;
+  font-weight: normal;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cal-wind__up-bar__button-month {
+  font-family: Oxygen;
+  background-color: #ffffff;
+  border-style: none;
+  font-size: 18px;
+  text-align: center;
+}
+
+.cal-wind__authorization-bar {
+  font-family: Oxygen;
+  background-color: #F2F2F2;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 40px;
+  margin-bottom: 3px;
+}
+#three-vectors {
+  width: 25px;
+  position: absolute;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+.cal-wind__weekdays-bar {
+  display: flex;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cal-wind__weekday {
+  padding-left: 12%;
+  font-family: Oxygen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #4F4F4F;
+}
