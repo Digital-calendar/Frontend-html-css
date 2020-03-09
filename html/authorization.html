@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../css/authorization.css" />
+  </head>
+  <body>
+    <div class="window">
+      <div class="window__RectTop"></div>
+      <div class="window__mainBg">
+        <div class="window__mainWindow">
+          <div class="window__mainWindow__RectCenter"></div>
+          <div class="window__mainWindow__formGroup">
+            <form method="post" action="/signin">
+              <input
+                class="login"
+                type="email"
+                autofocus
+                placeholder="login"
+                name="login"
+              />
+              <input
+                class="pass"
+                type="password"
+                placeholder="password"
+                name="password"
+              />
+              <input
+                class="signIn"
+                type="submit"
+                value="sign in"
+                name="signIn"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
