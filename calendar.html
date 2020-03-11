@@ -6,23 +6,82 @@
     <link rel="stylesheet" href="calendar.css"/>
 </head>
 <body>
-<div class="wrap-window">
-    <div class="cal-wind__authorization-bar">Employee
-    <img src="3vectors.png" alt="three-vectors" id="three-vectors">
-    </div>
-    <div class="cal-wind__upper-bar-months">
-        <button class="cal-wind__up-bar__button-month">February</button>
-        <button class="cal-wind__up-bar__button-month">March</button>
-        <button class="cal-wind__up-bar__button-month">April</button>
-    </div>
-    <div class="cal-wind__weekdays-bar">
-        <div class="cal-wind__weekday">mon</div>
-        <div class="cal-wind__weekday">tue</div>
-        <div class="cal-wind__weekday">wed</div>
-        <div class="cal-wind__weekday">fri</div>
-        <div class="cal-wind__weekday">sat</div>
-        <div class="cal-wind__weekday">sun</div>
-    </div>
+<div class="cal-wind__authorization-bar">
+    <button class="cal-wind__auth-bar__employee-info-btn"><!--onmouseover=""-->Employee</button>
+    <button class="cal-wind__auth-bar__menu-btn">
+        <img src="3vectors.png" alt="three-vectors" id="three-vectors">
+    </button>
 </div>
+<div class="cal-wind__upper-bar-months">
+    <button class="cal-wind__up-bar__button-year">2020
+        <img src="Arrow-down.svg" alt="arrow-down" id="arrow-down-year">
+    </button>
+    <button class="cal-wind__up-bar__button-month">February</button>
+    <button class="cal-wind__up-bar__button-month">March</button>
+    <button class="cal-wind__up-bar__button-month">April</button>
+    <button class="cal-wind__up-bar__mapping-button">
+        <img src="month.png" alt="month" id="month">Month<img src="Arrow-down.svg" alt="arrow-down" id="arrow-down-month">
+    </button>
+    <button class="cal-wind__up-bar__new-event-button">New Event</button>
+</div>
+<div class="cal-wind__days-table">
+    <table>
+        <tr>
+            <th class="cal-wind__weekday">mon</th>
+            <th class="cal-wind__weekday">tue</th>
+            <th class="cal-wind__weekday">wed</th>
+            <th class="cal-wind__weekday">thu</th>
+            <th class="cal-wind__weekday">fri</th>
+            <th class="cal-wind__weekday">sat</th>
+            <th class="cal-wind__weekday">sun</th>
+        </tr>
+        <tr class="cal-wind__day">
+            <td><button class="cal-wind__days-table__day-btn">1</button></td>
+            <td><button class="cal-wind__days-table__day-btn">2</button></td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr class="cal-wind__day">
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>14</td>
+        </tr>
+        <tr class="cal-wind__day">
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+        <tr class="cal-wind__day">
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+        </tr>
+        <tr class="cal-wind__day">
+            <td>29</td>
+            <td>30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<div id="employee-info" class="tabcontent"></div>
 </body>
 </html>
