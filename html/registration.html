@@ -1,67 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign in</title>
     <link rel="stylesheet" href="../css/registration.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="window">
-      <div class="window__RectTop">
-        <button class="signInTop">sign in</button>
-      </div>
-      <div class="window__mainBg">
-        <div class="window__mainWindow">
-          <div class="window__mainWindow__RectCenter"></div>
-          <div class="window__mainWindow__formGroup">
-            <form method="post" action="/signup">
-              <input
-                class="firstName"
-                type="text"
-                autofocus
-                placeholder="first name"
-                name="firstName"
-                required
-              />
-              <input
-                class="lastName"
-                type="text"
-                placeholder="last name"
-                name="lastName"
-                required
-              />
-              <input
-                class="email"
-                type="email"
-                placeholder="email"
-                name="email"
-                required
-              />
-              <input
-                class="pass"
-                type="password"
-                placeholder="password"
-                name="password"
-                required
-              />
-              <input
-                class="passRepeat"
-                type="password"
-                placeholder="confirm password"
-                name="passwordRepeat"
-                required
-              />
-              <input
-                class="signUp"
-                type="submit"
-                value="sign up"
-                name="signUp"
-              />
-            </form>
-          </div>
+        <div class="window__RectTop">
+            <button class="signInTop">sign in</button>
         </div>
-      </div>
+        <div class="window__mainBg">
+            <div class="window__mainWindow">
+                <div class="window__mainWindow__RectCenter"></div>
+                <div class="window__mainWindow__formGroup">
+                    <form method="post" action="/signup">
+                        <input class="firstName" type="text" autofocus placeholder="first name" name="firstName" required />
+                        <input class="lastName" type="text" placeholder="last name" name="lastName" required />
+                        <input class="email" type="email" placeholder="email" name="email" required />
+                        <input class="pass" type="password" placeholder="password" name="password" required />
+                        <input class="passRepeat" type="password" placeholder="confirm password" name="passwordRepeat" required />
+                        <input class="signUp" type="submit" value="sign up" name="signUp" />
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
-  </body>
+</body>
+
 </html>
