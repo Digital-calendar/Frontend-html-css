@@ -7,47 +7,56 @@
 </head>
 <body>
 <div class="cal-wind__authorization-bar">
-    <button class="cal-wind__auth-bar__employee-info-btn"><!--onmouseover=""-->Employee</button>
-    <button class="cal-wind__auth-bar__menu-btn">
+    <div class="cal-wind__auth-bar__employee">Employee</div>
+    <button class="cal-wind__auth-bar__employee-info-btn">
         <img src="3vectors.png" alt="three-vectors" id="three-vectors">
+        <div class="cal-wind__auth-bar__employee-info-btn__submenu"></div>
     </button>
 </div>
 <div class="cal-wind__menu-bar">
     <button class="cal-wind__menu-bar__button-year">2020
         <img src="Arrow-down.svg" alt="arrow-down" id="arrow-down-year">
+        <div class="cal-wind__menu-bar__year-submenu"></div>
     </button>
     <button class="cal-wind__menu-bar__button-month">February</button>
     <button class="cal-wind__menu-bar__button-month">March</button>
     <button class="cal-wind__menu-bar__button-month">April</button>
     <button class="cal-wind__up-bar__new-event-button">New Event</button>
-    <button class="cal-wind__up-bar__filter-button">
+    <button class="cal-wind__up-bar__filter-btn">
         <img src="triangle-filter.png" alt="filter" id="filter">Filter
         <img src="Arrow-down.svg" alt="arrow-down-filter" id="arrow-down-filter">
+        <div class="cal-wind__up-bar__filter-btn__filter-submenu">
+            <!--<button class="filter-private"></button>
+            <button class="filter-internal"></button>
+            <button class="filter-external"></button>
+            <button class="filter-correspondence"></button>-->
+        </div>
     </button>
-    <button class="cal-wind__menu-bar__mapping-button">
+    <button class="cal-wind__menu-bar__mapping-btn">
         <img src="month.png" alt="month" id="month">Month<img src="Arrow-down.svg" alt="arrow-down"
                                                               id="arrow-down-month">
+        <div class="cal-wind__menu-bar__mapping-btn__map-submenu"></div>
     </button>
 </div>
+<div class="cal-wind__days-table__wkd-bar">
+    <div class="cal-wind__weekdays-bar__wkd">mon</div>
+    <div class="cal-wind__weekdays-bar__wkd">tue</div>
+    <div class="cal-wind__weekdays-bar__wkd">wed</div>
+    <div class="cal-wind__weekdays-bar__wkd">thu</div>
+    <div class="cal-wind__weekdays-bar__wkd">fri</div>
+    <div class="cal-wind__weekdays-bar__day-off">sat</div>
+    <div class="cal-wind__weekdays-bar__day-off">sun</div>
+</div>
 <div class="cal-wind__days-table">
-    <div class="cal-wind__days-table__wkd-bar">
-        <div class="cal-wind__weekdays-bar__wkd">mon</div>
-        <div class="cal-wind__weekdays-bar__wkd">tue</div>
-        <div class="cal-wind__weekdays-bar__wkd">wed</div>
-        <div class="cal-wind__weekdays-bar__wkd">thu</div>
-        <div class="cal-wind__weekdays-bar__wkd">fri</div>
-        <div class="cal-wind__weekdays-bar__day-off">sat</div>
-        <div class="cal-wind__weekdays-bar__day-off">sun</div>
-    </div>
     <div class="cal-wind__days-table__week">
         <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">1</button>
+            <button class="cal-wind__days-table__day-btn"></button>
         </div>
         <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">2</button>
+            <button class="cal-wind__days-table__day-btn"></button>
         </div>
         <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">3</button>
+            <button class="cal-wind__days-table__day-btn"></button>
         </div>
         <div class="cal-wind__days-table__day">
             <button class="cal-wind__days-table__day-btn">4</button>
@@ -55,10 +64,10 @@
         <div class="cal-wind__days-table__day">
             <button class="cal-wind__days-table__day-btn">5</button>
         </div>
-        <div class="cal-wind__days-table__day">
+        <div class="cal-wind__days-table__day-off">
             <button class="cal-wind__days-table__day-off-btn">6</button>
         </div>
-        <div class="cal-wind__days-table__day">
+        <div class="cal-wind__days-table__day-off">
             <button class="cal-wind__days-table__day-off-btn">7</button>
         </div>
     </div>
@@ -78,10 +87,10 @@
         <div class="cal-wind__days-table__day">
             <button class="cal-wind__days-table__day-btn">5</button>
         </div>
-        <div class="cal-wind__days-table__day">
+        <div class="cal-wind__days-table__day-off">
             <button class="cal-wind__days-table__day-off-btn">6</button>
         </div>
-        <div class="cal-wind__days-table__day">
+        <div class="cal-wind__days-table__day-off">
             <button class="cal-wind__days-table__day-off-btn">7</button>
         </div>
     </div>
