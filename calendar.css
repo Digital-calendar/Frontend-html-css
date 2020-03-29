@@ -64,7 +64,7 @@ html, body {
   font-family: Oxygen;
   text-overflow: ellipsis;
   white-space: nowrap;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   position: relative;
   width: 100%;
 }
@@ -248,6 +248,7 @@ html, body {
 
 .cal-wind__days-table__week {
   display: flex;
+  overflow: hidden;
   width: 100%;
   height: 20%;
 }
@@ -257,13 +258,20 @@ html, body {
   border: 1px solid #4F4F4F;
   border-top: none;
   border-right: none;
-  flex-grow: 0;
+  min-width: 14%;
+}
+
+.cal-wind__days-table__day-off{
+  background-color: #ECECEC;
 }
 
 .cal-wind__days-table__day-btn, .cal-wind__days-table__day-off-btn {
   height: 100%;
   width: 100%;
   background-color: transparent;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
   border-style: none;
   font-size: 48px;
   font-family: Oxygen;
@@ -273,9 +281,22 @@ html, body {
   background-color: #ECECEC;
 }
 
-.tabcontent #employee-info:hover {
-  width: 30%;
-  height: 200px;
+.cal-wind__days-table__day-btn__text-container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text {
+  margin:0;
+}
+
+.cal-wind__days-table__day-btn__circle {
+  background-color: #FD5052;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
 }
 
 .cal-wind__days-table__day-btn:hover,
