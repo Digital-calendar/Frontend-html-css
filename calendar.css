@@ -13,31 +13,38 @@ html, body {
   font-size: 18px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
   text-align: right;
-  padding-right: 40px;
+  padding-right: 20px;
   margin-bottom: 3px;
+  vertical-align: center;
 }
 
 .cal-wind__auth-bar__employee {
   font-family: Oxygen;   
   background-color: inherit;
   border-style: none;
-  font-size: 18px;
+  font-size: 20px;
   height: 37px;
 }
 
 .cal-wind__auth-bar__employee-info-btn {
-  position: absolute;
-  top:0;
+  position: relative;
   background-color: inherit;
   border-style: none;
-  z-index: 100;
   font-family: Oxygen;
   font-size: 18px;
   height: 37px;
 }
 
+.cal-wind__auth-bar__employee-info-btn:focus .sign-out, .cal-wind__auth-bar__employee-info-btn:focus .edit-info{
+  display: flex;
+  position: absolute;
+  height: 50px;
+  border-style: none;
+}
+
 .cal-wind__auth-bar__employee-info-btn:focus .cal-wind__auth-bar__employee-info-btn__submenu {
   display: flex;
+  flex-direction: column;
   z-index: 100;
   position: absolute;
   width: 300px;
@@ -46,6 +53,11 @@ html, body {
   top: 37px;
   background: #F2F2F2;
   box-shadow: -5px 5px 7px rgba(0, 0, 0, 0.25);
+}
+
+
+.info {
+  height: 50px;
 }
 
 
@@ -186,7 +198,8 @@ html, body {
 
 .cal-wind__menu-bar__year-submenu, .cal-wind__up-bar__filter-btn__filter-submenu,
 .cal-wind__menu-bar__mapping-btn__map-submenu, .cal-wind__auth-bar__employee-info-btn__submenu,
-.filter-private, .filter-internal, .filter-external, .filter-correspondence {
+.filter-private, .filter-internal, .filter-external, .filter-correspondence,
+.cal-wind__days-table__day-submenu, .edit-info, .sign-out{
   display: none;
 }
 
@@ -198,11 +211,18 @@ html, body {
   align-items: center;
   text-align: center;
   text-transform: capitalize;
-  font-size: 24px;
+  font-size: 18px;
   background-color: #F2F2F2;
   width: 200px;
   height: 150px;
   left: 0;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.year {
+  height: 25px;
+  margin:0;
 }
 
 .cal-wind__menu-bar__button-year:hover {
@@ -297,6 +317,33 @@ html, body {
   width: 10px;
   height: 10px;
   border-radius: 10px;
+}
+
+#current {
+  margin-top: 20px;
+  line-height: 120%;
+  width: 70px;
+  height: 70px;
+  color: #FFFFFF;
+  border-radius: 50%;
+  font-size: 48px;
+  background-color: #FD5052;
+  margin-bottom: 10px;
+}
+
+.cal-wind__days-table__day-btn:focus .cal-wind__days-table__day-submenu, .cal-wind__days-table__day-off-btn:focus
+.cal-wind__days-table__day-submenu {
+  display: flex;
+  position: absolute;
+  width: 300px;
+  height: 75px;
+  margin-left: 12%;
+  overflow-scrolling: auto;
+
+  background: #FAFAFA;
+  border: 2px solid #333333;
+  box-shadow: -5px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 1px;
 }
 
 .cal-wind__days-table__day-btn:hover,

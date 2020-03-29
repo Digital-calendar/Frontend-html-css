@@ -7,16 +7,29 @@
 </head>
 <body>
 <div class="cal-wind__authorization-bar">
-    <div class="cal-wind__auth-bar__employee">Employee</div>
+    <div class="cal-wind__auth-bar__employee">Employee
     <button class="cal-wind__auth-bar__employee-info-btn">
         <img src="3vectors.png" alt="three-vectors" id="three-vectors">
-        <div class="cal-wind__auth-bar__employee-info-btn__submenu"></div>
+        <div class="cal-wind__auth-bar__employee-info-btn__submenu">
+            <p class="info">Polina</p>
+            <p class="info">Polina</p>
+            <p class="info">admin</p>
+            <button class="edit-info">edit</button>
+            <button class="sign-out">sign out</button>
+        </div>
     </button>
+</div>
 </div>
 <div class="cal-wind__menu-bar">
     <button class="cal-wind__menu-bar__button-year">2020
         <img src="Arrow-down.svg" alt="arrow-down" id="arrow-down-year">
-        <div class="cal-wind__menu-bar__year-submenu"></div>
+        <div class="cal-wind__menu-bar__year-submenu">
+            <p class="year">2019</p>
+            <p class="year">2019</p>
+            <p class="year">2019</p>
+            <p class="year">2019</p>
+            <p class="year">2019</p>
+        </div>
     </button>
     <button class="cal-wind__menu-bar__button-month">February</button>
     <button class="cal-wind__menu-bar__button-month">March</button>
@@ -57,6 +70,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">1</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -65,6 +79,7 @@
                     <p class="text">2</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -73,6 +88,7 @@
                     <p class="text">3</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -81,6 +97,7 @@
                     <p class="text">4</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -88,6 +105,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">5</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -95,6 +113,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">6</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
     </div>
@@ -104,6 +123,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">7</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -112,6 +132,7 @@
                     <p class="text">8</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -119,14 +140,17 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">9</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
             <button class="cal-wind__days-table__day-btn">
                 <div class="cal-wind__days-table__day-btn__text-container">
-                    <p class="text">10</p>
+                    <p class="text" id="current">10</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -135,6 +159,7 @@
                     <p class="text">11</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -142,6 +167,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">12</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -150,6 +176,7 @@
                     <p class="text">13</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
     </div>
@@ -160,6 +187,7 @@
                     <p class="text">14</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -167,6 +195,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">15</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -174,6 +203,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">16</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -181,6 +211,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">17</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -189,6 +220,7 @@
                     <p class="text">18</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -197,6 +229,7 @@
                     <p class="text">19</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -204,6 +237,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">20</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
     </div>
@@ -213,6 +247,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">21</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -221,6 +256,7 @@
                     <p class="text">22</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -228,6 +264,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">23</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -236,6 +273,7 @@
                     <p class="text">24</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day">
@@ -243,6 +281,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">25</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -251,6 +290,7 @@
                     <p class="text">26</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day-off">
@@ -259,6 +299,7 @@
                     <p class="text">27</p>
                     <div class="cal-wind__days-table__day-btn__circle"></div>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
     </div>
@@ -268,6 +309,7 @@
                 <div class="cal-wind__days-table__day-btn__text-container">
                     <p class="text">28</p>
                 </div>
+                <div class="cal-wind__days-table__day-submenu"></div>
             </button>
         </div>
         <div class="cal-wind__days-table__day"></div>
