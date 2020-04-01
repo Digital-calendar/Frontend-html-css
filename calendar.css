@@ -7,31 +7,32 @@ html, body {
 }
 
 .cal-wind__authorization-bar {
+  display: flex;
   font-family: Oxygen;
   background-color: #F2F2F2;
   height: 37px;
   font-size: 18px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
-  text-align: right;
-  padding-right: 20px;
+  justify-content: flex-end;
+  line-height: 35px;
   margin-bottom: 3px;
-  vertical-align: center;
-}
-
-.cal-wind__auth-bar__employee {
-  font-family: Oxygen;   
-  background-color: inherit;
-  border-style: none;
-  font-size: 20px;
-  height: 37px;
 }
 
 .cal-wind__auth-bar__employee-info-btn {
   position: relative;
-  background-color: inherit;
   border-style: none;
   font-family: Oxygen;
+  padding-left: 10px;
   font-size: 18px;
+  height: 37px;
+}
+
+.cal-wind__auth-bar__employee {
+  position: relative;
+  font-family: Oxygen;   
+  background-color: inherit;
+  border-style: none;
+  font-size: 20px;
   height: 37px;
 }
 
@@ -308,10 +309,17 @@ html, body {
   display: flex;
   flex-grow: 0.5;
   align-items: center;
+  margin-top: 15%;
+  line-height: 160%;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  font-size: 48px;
+  margin-bottom: 14%;
+  justify-content: center;
 }
 
 .text {
-  margin:0;
 }
 
 .cal-wind__days-table__day-btn__circle {
@@ -321,7 +329,7 @@ html, body {
   border-radius: 10px;
 }
 
-#current {
+.current {
   margin-top: 15%;
   line-height: 160%;
   width: 75px;
@@ -339,7 +347,7 @@ html, body {
   position: absolute;
   width: 300px;
   height: 75px;
-  margin-left: 12%;
+  margin-left: 220px;
   overflow-scrolling: auto;
 
   background: #FAFAFA;
