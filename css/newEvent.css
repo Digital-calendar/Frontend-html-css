@@ -65,7 +65,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  background: #0061ff;
+  /*background: #0061ff;*/
 }
 
 .left-fields-container {
@@ -75,27 +75,12 @@ body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  background: #00fc0e;
+  /*background: #00fc0e;*/
 }
 
 .right-fields-container {
-  width: 50%;
-  min-width: 300px;
-  min-height: 375px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  background: #fc5237;
-}
-
-.button-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-content: center;
-  align-items: center;
-  background: yellow;
+  /*background: #fc5237;*/
 }
 
 .field-container {
@@ -105,7 +90,7 @@ body {
   flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
-  background: #fc06f0;
+  /*background: #fc06f0;*/
 }
 
 .input-field-style {
@@ -114,12 +99,10 @@ body {
   width: 100%;
   height: 35px;
   color: black;
-  background: rgba(249, 249, 249, .5); /* #F9F9F9 */
+  background: rgba(255, 255, 255, .5); /* #FFFFFF */
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .25);
   border-radius: 2px;
-  border-width: 1px;
-  border-color: rgba(189, 189, 189, .5); /* #BDBDBD */
-  border-style: solid;
+  border: 1px solid rgba(189, 189, 189, .5); /* #BDBDBD */
   font-family: "Oxygen", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -131,7 +114,8 @@ body {
 }
 
 .input-field-style:focus,
-.input-time-field-style:focus {
+.input-time-field-style:focus,
+.select-event:focus {
   outline: none;
   border-color: #2f2f2f;
   transition: 0.3s;
@@ -156,11 +140,12 @@ body {
 input[type="date"]::-webkit-outer-spin-button,
 input[type="date"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
   margin: 0;
 }
 
 .private-event {
-  margin-left: 8%;
+  margin-left: 35px;
   margin-right: 5px;
   display: flex;
   align-items: center;
@@ -180,6 +165,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .toggle-switch {
   align-self: center;
   text-align: left;
+  margin-right: 15px;
   width: 30px;
   height: 16px;
   border-radius: 60px;
@@ -245,3 +231,118 @@ input[type="date"]::-webkit-inner-spin-button {
   transform: translate3d(100%, -50%, 0);
 }
 /*----Toggle end----*/
+
+.select-event {
+  display: flex;
+  align-self: center;
+  margin-left: auto;
+  width: 100px;
+  height: 25px;
+  max-width: 175px;
+  font-family: "Oxygen", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  flex: 1;
+  color: #333333;
+  background: #FFFFFF;
+  border: 0;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
+  cursor: pointer;
+}
+
+.feedback-item {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100px;
+  border-bottom: 1px solid #000000;
+  box-shadow: 0 1px 0px rgba(0, 0, 0, .25);
+}
+
+.textarea-field {
+  height: 100%;
+  resize: none;
+  overflow: auto;
+}
+
+.button-container {
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: center;
+  align-items: center;
+  /*background: yellow;*/
+}
+
+.button-text-style {
+  font-family: "Oxygen", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+  line-height: 1;
+}
+
+.button-style {
+  margin-left: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
+  border: 0;
+  border-radius: 8px;
+  text-decoration: none;
+  outline: none;
+}
+
+.button-style:before {
+  content: "";
+  background-color: #FFFFFF;
+  position: absolute;
+  top: -200%;
+  right: -200%;
+  bottom: -200%;
+  left: -200%;
+  transform: scale(.001, .001);
+}
+
+.button-style:focus:before {
+  animation: click-effect .8s ease-in-out;
+  background: #F2F2F2;
+}
+
+.button-style:hover {
+  background: #F2F2F2;
+  transition: .1s;
+}
+
+.button-style:active {
+  background: #FFFFFF;
+  transition: .1s;
+}
+
+@keyframes click-effect {
+  50% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+  99% {
+    transform: scale(.001, .001);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(.001, .001);
+    opacity: 1;
+  }
+}
