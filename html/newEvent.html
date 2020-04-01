@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/newEvent.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400&display=swap&subset=latin-ext" rel="stylesheet">
+  <title>New Event</title>
+</head>
+<body>
+
+  <div class="window">
+
+    <div class="window-upper-panel">
+      <div style="width: 24px; height: 25px;"></div> <!--да это костыль-->
+      <div class="window-title-style">New Event</div>
+      <img src="../images/x.svg" alt="X" id="close-icon">
+    </div>
+
+    <div class="window-content">
+      <div class="main-container">
+
+        <div class="left-fields-container">
+
+          <div class="field-container">
+            <img src="../images/light_bookmark.svg" alt="" id="bookmark-ico" class="icon-style">
+            <input
+              class="input-field-style"
+              name="title"
+              type="text"
+              placeholder="enter the title"
+              tabindex="1"
+              required
+            />
+          </div>
+          <div class="field-container">
+            <img src="../images/light_clock.svg" alt="" id="clock-ico" class="icon-style">
+            <input
+              class="input-field-style"
+              name="date"
+              type="date"
+              tabindex="2"
+              required
+            />
+            <input
+              class="input-time-field-style"
+              name="time"
+              type="text"
+              pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+              value="00:00"
+              tabindex="3"
+            />
+          </div>
+          <div class="field-container">
+            <img src="../images/bytesize_location.svg" alt="" id="location-ico" class="icon-style">
+            <input
+              class="input-field-style"
+              name="location"
+              type="text"
+              placeholder="enter location"
+              tabindex="4"
+            />
+          </div>
+          <div class="field-container">
+            <img src="../images/person-add-outline.svg" alt="" id="person-ico" class="icon-style">
+            <input
+              class="input-field-style"
+              name="title"
+              type="email"
+              placeholder="invite people"
+              tabindex="5"
+            />
+          </div>
+
+        </div>
+
+        <div class="right-fields-container">
+          <div>FDGDFGFG</div>
+          <div class="button-container">
+            <div>SAVE</div>
+            <div>CANCEL</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
