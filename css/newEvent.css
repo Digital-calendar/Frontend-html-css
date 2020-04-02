@@ -25,6 +25,11 @@ body {
   margin-right: 1%;
 }
 
+.invisible-ico {
+  width: 24px;
+  height: 25px;
+}
+
 .window-form,
 .window-content,
 .left-fields-container,
@@ -69,6 +74,10 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
+}
+
+.window-upper-panel:last-child {
+  outline: none;
 }
 
 .window-content {

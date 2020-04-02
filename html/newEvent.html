@@ -12,9 +12,9 @@
   <form id="new-event-form" name="new-event-form" class="window-form" action="#" method="post">
 
     <div class="window-upper-panel">
-      <div style="width: 24px; height: 25px;"></div> <!--да это костыль-->
+      <div class="invisible-ico"></div> <!--да это костыль-->
       <div class="window-title-style">New Event</div>
-      <img src="../images/x.svg" alt="X" id="close-icon" style="outline: none" tabindex="13">
+      <img src="../images/x.svg" alt="X" style="outline: none" tabindex="13">
     </div>
 
     <div class="window-content">
@@ -24,7 +24,7 @@
 
           <div class="field-container">
             <label for="title">
-              <img src="../images/light_bookmark.svg" alt="" id="bookmark-ico" class="icon-style">
+              <img src="../images/light_bookmark.svg" alt="" class="icon-style">
             </label>
             <input
               class="text-style input-field-style"
@@ -39,7 +39,7 @@
           </div>
           <div class="field-container">
             <label for="date">
-              <img src="../images/light_clock.svg" alt="" id="clock-ico" class="icon-style">
+              <img src="../images/light_clock.svg" alt="" class="icon-style">
             </label>
             <input
               class="text-style input-field-style"
@@ -64,7 +64,7 @@
           </div>
           <div class="field-container">
             <label for="location">
-              <img src="../images/bytesize_location.svg" alt="" id="location-ico" class="icon-style">
+              <img src="../images/bytesize_location.svg" alt="" class="icon-style">
             </label>
             <input
               class="text-style input-field-style"
@@ -78,7 +78,7 @@
           </div>
           <div class="field-container">
             <label for="invite-field">
-              <img src="../images/person-add-outline.svg" alt="" id="person-ico" class="icon-style">
+              <img src="../images/person-add-outline.svg" alt="" class="icon-style">
             </label>
             <input
               class="text-style input-field-style"
@@ -93,7 +93,7 @@
           </div>
           <div class="field-container">
             <div class="private-event">
-              <img src="../images/radio-button-on.svg" alt="" id="indicator-red-ico" class="icon-style">
+              <img src="../images/radio-button-on.svg" alt="" class="icon-style">
               <div class="window-title-style" style="margin-left: 3px;">Private event</div>
             </div>
             <label class="toggle-switch" id="toggle">
@@ -120,7 +120,7 @@
           </div>
           <div class="field-container">
             <label for="feedback-contact">
-              <img src="../images/arrow-undo-outline.svg" alt="" id="arrow-feedback-ico" class="icon-style">
+              <img src="../images/arrow-undo-outline.svg" alt="" class="icon-style">
             </label>
             <input
               class="text-style input-field-style"
@@ -135,7 +135,7 @@
           </div>
           <div class="field-container">
             <label for="signature">
-              <img src="../images/paper-plane-outline.svg" alt="" id="plane-ico" class="icon-style">
+              <img src="../images/paper-plane-outline.svg" alt="" class="icon-style">
             </label>
             <input
               class="text-style input-field-style"
@@ -154,7 +154,7 @@
 
           <div class="field-container">
             <label for="description">
-              <img src="../images/chatbubble-ellipses-outline.svg" alt="" id="description-ico" class="icon-style" style="margin-top: 0; align-self: start;">
+              <img src="../images/chatbubble-ellipses-outline.svg" alt="" class="icon-style" style="margin-top: 0; align-self: start;">
             </label>
             <textarea
               class="text-style input-field-style textarea-field"
@@ -174,7 +174,7 @@
               formtarget="_self"
               tabindex="11"
               onclick="this.blur();">
-              <img src="../images/content-save.svg" alt="" id="save-ico">
+              <img src="../images/content-save.svg" alt="">
               <div class="text-style">Save</div>
             </button>
             <a
@@ -184,7 +184,7 @@
               id="cancel"
               tabindex="12"
               onclick="this.blur();">
-              <img src="../images/trash-outline.svg" alt="" id="trash-ico">
+              <img src="../images/trash-outline.svg" alt="">
               <div class="text-style">Cancel</div>
             </a>
           </div>
