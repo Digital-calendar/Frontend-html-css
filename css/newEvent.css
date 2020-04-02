@@ -3,19 +3,53 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
-  /*background: rgba(0, 0, 0, 0); -поменять потом для прозрачного фона*/
-  background: #F2F2F2;
+  background: rgba(0, 0, 0, 0);
 }
 
-.window {
+.text-style,
+.window-title-style {
+  font-family: 'Oxygen', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #000000;
+}
+
+.window-title-style {
+  font-weight: lighter;
+  margin: auto;
+}
+
+.icon-style {
+  flex-grow: 0;
+  margin-right: 1%;
+}
+
+.window-form,
+.window-content,
+.left-fields-container,
+.right-fields-container,
+.feedback-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.window-upper-panel,
+.main-container,
+.field-container,
+.button-container,
+.button-style {
+  display: flex;
+  flex-direction: row;
+}
+
+.window-form {
   position: absolute;
   left: 10%;
   right: 10%;
-  top: 10%;
+  top: 15%;
   bottom: 10%;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
   justify-content: stretch;
   flex-wrap: nowrap;
   width: 70%;
@@ -30,8 +64,6 @@ body {
 }
 
 .window-upper-panel {
-  display: flex;
-  flex-direction: row;
   height: 25px;
   background: #FFFFFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, .25);
@@ -39,18 +71,7 @@ body {
   border-top-right-radius: 8px;
 }
 
-.window-title-style {
-  font-family: 'Oxygen', sans-serif;
-  font-style: normal;
-  font-weight: lighter;
-  font-size: 18px;
-  color: #000000;
-  margin: auto;
-}
-
 .window-content {
-  display: flex;
-  flex-direction: column;
   flex-grow: 1;
   overflow-y: auto;
   overflow-x: hidden;
@@ -61,20 +82,17 @@ body {
 .main-container {
   flex-grow: 30;
   margin: 3% 5%;
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   /*background: #0061ff;*/
 }
 
-.left-fields-container {
+.left-fields-container,
+.right-fields-container {
   width: 50%;
   min-width: 350px;
   min-height: 375px;
   flex-grow: 1;
-  display: flex;
-  flex-direction: column;
   /*background: #00fc0e;*/
 }
 
@@ -86,8 +104,6 @@ body {
 .field-container {
   margin-right: 5%;
   margin-bottom: 15px;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   align-items: stretch;
   /*background: #fc06f0;*/
@@ -98,15 +114,10 @@ body {
   padding-left: 2%;
   width: 100%;
   height: 35px;
-  color: black;
   background: rgba(255, 255, 255, .5); /* #FFFFFF */
   box-shadow: inset 2px 2px 2px rgba(0, 0, 0, .25);
   border-radius: 2px;
   border: 1px solid rgba(189, 189, 189, .5); /* #BDBDBD */
-  font-family: "Oxygen", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
 }
 
 .input-field-style::-webkit-input-placeholder {
@@ -129,9 +140,6 @@ body {
   margin-left: 5%;
   padding-left: 2%;
   border: 0;
-  font-family: "Oxygen", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 24px;
   color: #333333;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, .25);
@@ -154,11 +162,6 @@ input[type="date"]::-webkit-inner-spin-button {
   height: 25px;
   border: 1px solid #FD5052;
   border-radius: 5px;
-}
-
-.icon-style {
-  flex-grow: 0;
-  margin-right: 1%;
 }
 
 /*----Toggle----*/
@@ -239,9 +242,6 @@ input[type="date"]::-webkit-inner-spin-button {
   width: 100px;
   height: 25px;
   max-width: 175px;
-  font-family: "Oxygen", sans-serif;
-  font-style: normal;
-  font-weight: normal;
   font-size: 17px;
   flex: 1;
   color: #333333;
@@ -254,13 +254,11 @@ input[type="date"]::-webkit-inner-spin-button {
 
 .feedback-item {
   margin-left: 10px;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   width: 100%;
   height: 100px;
   border-bottom: 1px solid #000000;
-  box-shadow: 0 1px 0px rgba(0, 0, 0, .25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 }
 
 .textarea-field {
@@ -271,28 +269,15 @@ input[type="date"]::-webkit-inner-spin-button {
 
 .button-container {
   margin-right: 5%;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   align-content: center;
   align-items: center;
   /*background: yellow;*/
 }
 
-.button-text-style {
-  font-family: "Oxygen", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  color: #000000;
-  line-height: 1;
-}
-
 .button-style {
   margin-left: 25px;
   position: relative;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
   text-align: center;
   align-items: center;
@@ -319,7 +304,7 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 
 .button-style:focus:before {
-  animation: click-effect .8s ease-in-out;
+  animation: click-effect .6s ease-in-out;
   background: #FFFFFF;
 }
 
