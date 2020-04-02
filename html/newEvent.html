@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/newEvent.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400&display=swap&subset=latin-ext" rel="stylesheet">
+  <title>New Event</title>
+</head>
+<body>
+
+  <form id="new-event-form" name="new-event-form" class="window-form" action="#" method="post">
+
+    <div class="window-upper-panel">
+      <div class="invisible-ico"></div> <!--да это костыль-->
+      <div class="window-title-style">New Event</div>
+      <img src="../images/x.svg" alt="X" style="outline: none" tabindex="13">
+    </div>
+
+    <div class="window-content">
+      <div class="main-container">
+
+        <div class="left-fields-container">
+
+          <div class="field-container">
+            <label for="title">
+              <img src="../images/light_bookmark.svg" alt="" class="icon-style">
+            </label>
+            <input
+              class="text-style input-field-style"
+              name="title"
+              type="text"
+              placeholder="enter the title"
+              id="title"
+              form="new-event-form"
+              tabindex="1"
+              required
+            />
+          </div>
+          <div class="field-container">
+            <label for="date">
+              <img src="../images/light_clock.svg" alt="" class="icon-style">
+            </label>
+            <input
+              class="text-style input-field-style"
+              name="date"
+              type="date"
+              id="date"
+              form="new-event-form"
+              tabindex="2"
+              required
+            />
+            <label for="time"></label>
+            <input
+              class="text-style input-time-field-style"
+              name="time"
+              type="text"
+              pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]"
+              value="00:00"
+              id="time"
+              form="new-event-form"
+              tabindex="3"
+            />
+          </div>
+          <div class="field-container">
+            <label for="location">
+              <img src="../images/bytesize_location.svg" alt="" class="icon-style">
+            </label>
+            <input
+              class="text-style input-field-style"
+              name="location"
+              type="text"
+              placeholder="enter location"
+              id="location"
+              form="new-event-form"
+              tabindex="4"
+            />
+          </div>
+          <div class="field-container">
+            <label for="invite-field">
+              <img src="../images/person-add-outline.svg" alt="" class="icon-style">
+            </label>
+            <input
+              class="text-style input-field-style"
+              name="invite-field"
+              type="email"
+              placeholder="invite people"
+              id="invite-field"
+              form="new-event-form"
+              tabindex="5"
+              multiple
+            />
+          </div>
+          <div class="field-container">
+            <div class="private-event">
+              <img src="../images/radio-button-on.svg" alt="" class="icon-style">
+              <div class="window-title-style" style="margin-left: 3px;">Private event</div>
+            </div>
+            <label class="toggle-switch" id="toggle">
+              <input
+                name="private-event-toggle"
+                type="checkbox"
+                form="new-event-form"
+                tabindex="6"
+              />
+              <span></span>
+            </label>
+            <label for="select"></label>
+            <select class="text-style select-event" name="select" id="select" form="new-event-form" tabindex="7">
+              <option value="1" selected>Internal event</option>
+              <option value="2">External event</option>
+              <option value="3">Correspondence</option>
+            </select>
+          </div>
+          <div class="field-container">
+            <div class="feedback-item">
+              <span></span> <!-- да еще один костыль -->
+              <div class="text-style" style="margin: 0;">Feedback</div>
+            </div>
+          </div>
+          <div class="field-container">
+            <label for="feedback-contact">
+              <img src="../images/arrow-undo-outline.svg" alt="" class="icon-style">
+            </label>
+            <input
+              class="text-style input-field-style"
+              name="feedback-contact"
+              type="text"
+              pattern="(\+[0-9][-_()\s]+|\+7\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2})|(^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$)"
+              placeholder="phone or email"
+              id="feedback-contact"
+              form="new-event-form"
+              tabindex="8"
+            />
+          </div>
+          <div class="field-container">
+            <label for="signature">
+              <img src="../images/paper-plane-outline.svg" alt="" class="icon-style">
+            </label>
+            <input
+              class="text-style input-field-style"
+              name="signature"
+              type="text"
+              placeholder="how can address you?"
+              id="signature"
+              form="new-event-form"
+              tabindex="9"
+            />
+          </div>
+
+        </div>
+
+        <div class="right-fields-container">
+
+          <div class="field-container">
+            <label for="description">
+              <img src="../images/chatbubble-ellipses-outline.svg" alt="" class="icon-style" style="margin-top: 0; align-self: start;">
+            </label>
+            <textarea
+              class="text-style input-field-style textarea-field"
+              name="description"
+              id="description"
+              placeholder="enter the description"
+              form="new-event-form"
+              tabindex="10"></textarea>
+            <label for="description"></label>
+          </div>
+          <div class="button-container">
+            <button
+              class="button-style"
+              name="save"
+              type="submit"
+              id="save"
+              formtarget="_self"
+              tabindex="11"
+              onclick="this.blur();">
+              <img src="../images/content-save.svg" alt="">
+              <div class="text-style">Save</div>
+            </button>
+            <a
+              href="#close"
+              class="button-style"
+              type="submit"
+              id="cancel"
+              tabindex="12"
+              onclick="this.blur();">
+              <img src="../images/trash-outline.svg" alt="">
+              <div class="text-style">Cancel</div>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </form>
+
+
+</body>
+</html>
