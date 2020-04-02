@@ -21,7 +21,7 @@ body {
   width: 70%;
   height: 75%;
   min-width: 600px;
-  min-height: 400px;
+  min-height: 325px;
   max-width: 1000px;
   max-height: 600px;
   background: #FFFFFF;
@@ -264,7 +264,7 @@ input[type="date"]::-webkit-inner-spin-button {
 }
 
 .textarea-field {
-  height: 100%;
+  height: 460px;
   resize: none;
   overflow: auto;
 }
@@ -304,6 +304,7 @@ input[type="date"]::-webkit-inner-spin-button {
   border-radius: 8px;
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
 .button-style:before {
@@ -319,7 +320,7 @@ input[type="date"]::-webkit-inner-spin-button {
 
 .button-style:focus:before {
   animation: click-effect .8s ease-in-out;
-  background: #F2F2F2;
+  background: #FFFFFF;
 }
 
 .button-style:hover {
