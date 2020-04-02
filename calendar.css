@@ -307,15 +307,15 @@ html, body {
 
 .cal-wind__days-table__day-btn__text-container {
   display: flex;
-  flex-grow: 0.5;
+  flex-direction: column;
+  flex-grow: 0.4;
   align-items: center;
-  margin-top: 15%;
-  line-height: 160%;
-  width: 75px;
-  height: 75px;
+  margin-top: 20%;
+  line-height: 180%;
+  width: 140%;
+  height: 2%;
   border-radius: 50%;
   font-size: 48px;
-  margin-bottom: 14%;
   justify-content: center;
 }
 
@@ -330,15 +330,15 @@ html, body {
 }
 
 .current {
-  margin-top: 15%;
+  margin-top: 35%;
   line-height: 160%;
   width: 75px;
-  height: 75px;
+  height: 95px;
   color: #FFFFFF;
   border-radius: 50%;
   font-size: 48px;
   background-color: #FD5052;
-  margin-bottom: 14%;
+  margin-bottom: 48%;
 }
 
 .cal-wind__days-table__day-btn:focus .cal-wind__days-table__day-submenu, .cal-wind__days-table__day-off-btn:focus
