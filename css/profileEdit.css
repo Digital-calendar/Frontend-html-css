@@ -203,7 +203,14 @@ body {
   }
 }
 
+.pass-show-ico {
+  position: relative;
+  right: 30px;
+}
+
 .icon-wrapper {
+  margin-right: 0;
+  margin-left: 0;
   background: none;
   display: inline-block;
 }
@@ -216,17 +223,17 @@ body {
 }
 
 /*когда поле пустое (т.е placeholder=" "), убираем отображение иконки*/
-.pass-field:placeholder-shown + .icon-wrapper{
+.pass-field:placeholder-shown ~ .icon-wrapper{
   background: none;
 }
-.pass-field:placeholder-shown + .icon-wrapper .valid-ico {
+.pass-field:placeholder-shown ~ .icon-wrapper .valid-ico {
   opacity: 0;
 }
 
 /*когда в поле введен неправильный формат пароля (< 6 символов) (minlength="6")*/
-.pass-field:invalid + .icon-wrapper {
+.pass-field:invalid ~ .icon-wrapper {
   background: url("../images/slash.svg") no-repeat 50% 50%;
 }
-.pass-field:invalid + .icon-wrapper .valid-ico {
+.pass-field:invalid ~ .icon-wrapper .valid-ico {
   opacity: 0;
 }
