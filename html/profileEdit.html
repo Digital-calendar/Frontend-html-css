@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/profileEdit.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400&display=swap&subset=latin-ext" rel="stylesheet">
+  <title>Profile Edit</title>
+</head>
+<body>
+
+  <form id="profile-edit-form" name="profile-edit-form" class="window-form" action="#" method="post">
+
+    <div class="window-upper-panel">
+      <div class="window-title-style">Profile Edit</div>
+      <img src="../images/x.svg" alt="X">
+    </div>
+
+    <div class="window-content">
+      <div class="content-container">
+
+        <div class="field-column-container">
+          <label for="first-name" class="text-style input-label">First name</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style"
+              name="first-name"
+              type="text"
+              id="first-name"
+              value=""
+              form="profile-edit-form"
+              autocomplete="off"
+              tabindex="1"
+              required
+            />
+            <div class="empty-icon-style"></div>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <label for="last-name" class="text-style input-label">Last name</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style"
+              name="last-name"
+              type="text"
+              id="last-name"
+              value=""
+              form="profile-edit-form"
+              autocomplete="off"
+              tabindex="2"
+              required
+            />
+            <div class="empty-icon-style"></div>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <label for="position" class="text-style input-label">Employee's position</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style"
+              name="position"
+              type="text"
+              id="position"
+              value=""
+              form="profile-edit-form"
+              autocomplete="off"
+              tabindex="3"
+            />
+            <div class="empty-icon-style"></div>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <label for="phone" class="text-style input-label">Phone</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style"
+              name="phone"
+              type="tel"
+              id="phone"
+              value=""
+              pattern="\+?[0-9]\s?[(]{0,1}[0-9]{3}[)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}"
+              form="profile-edit-form"
+              autocomplete="off"
+              tabindex="4"
+            />
+            <div class="empty-icon-style"></div>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <label for="city" class="text-style input-label">City</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style"
+              name="city"
+              type="text"
+              id="city"
+              value=""
+              form="profile-edit-form"
+              autocomplete="off"
+              tabindex="5"
+            />
+            <div class="empty-icon-style"></div>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <div class="title-item">
+            <span></span>
+            <div class="text-style" style="margin: 0;">Change password</div>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <label for="new-password" class="text-style input-label">New password</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style pass-field"
+              name="new-password"
+              type="password"
+              id="new-password"
+              form="profile-edit-form"
+              minlength="6"
+              maxlength="30"
+              placeholder=" "
+              autocomplete="off"
+              tabindex="6"
+            />
+            <img src="../images/octicon_eye.svg" alt="" class="pass-show-ico">
+            <a class="empty-icon-style icon-wrapper">
+              <img src="../images/check.svg" alt="" class="valid-ico">
+            </a>
+          </div>
+        </div>
+        <div class="field-column-container">
+          <label for="confirm-new-password" class="text-style input-label">Confirm new password</label>
+          <div class="field-row-container">
+            <input
+              class="text-style input-field-style pass-field"
+              name="confirm-new-password"
+              type="password"
+              id="confirm-new-password"
+              form="profile-edit-form"
+              minlength="6"
+              maxlength="30"
+              placeholder=" "
+              autocomplete="off"
+              tabindex="7"
+            />
+            <img src="../images/octicon_eye.svg" alt="" class="pass-show-ico">
+            <a class="empty-icon-style icon-wrapper">
+              <img src="../images/check.svg" alt="" class="valid-ico">
+            </a>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button
+            class="button-style"
+            name="save"
+            type="submit"
+            id="save"
+            formtarget="_self"
+            tabindex="8"
+            onclick="this.blur();">
+            <img src="../images/content-save.svg" alt="">
+            <div class="text-style">Save</div>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+  </form>
+
+</body>
+</html>
