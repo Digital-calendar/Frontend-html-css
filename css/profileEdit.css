@@ -220,6 +220,7 @@ body {
 }
 
 .pass-field {
+  padding-right: 35px;
 }
 
 /*когда поле пустое (т.е placeholder=" "), убираем отображение иконки*/
