@@ -310,13 +310,14 @@ html, body {
   flex-direction: column;
   flex-grow: 0.4;
   align-items: center;
-  margin-top: 20%;
+  margin-top: 25%;
   line-height: 180%;
   width: 140%;
-  height: 8%;
+  height: 10%;
   border-radius: 50%;
   font-size: 48px;
   justify-content: center;
+  margin-bottom: 15%;
 }
 
 .text {
@@ -327,18 +328,27 @@ html, body {
   width: 10px;
   height: 10px;
   border-radius: 10px;
+  margin-top: 0;
 }
 
 .current {
   margin-top: 10%;
-  line-height: 160%;
+  line-height: 150%;
   width: 75px;
-  height: 75px;
+  height: 72px;
   color: #FFFFFF;
   border-radius: 50%;
   font-size: 48px;
   background-color: #FD5052;
-  margin-bottom: 12%;
+  margin-bottom: 1%;
+}
+
+.cal-wind__days-table__day-btn__curr-circle {
+    background-color: #FD5052;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    margin-top: 5%;
 }
 
 .cal-wind__days-table__day-btn:focus .cal-wind__days-table__day-submenu, .cal-wind__days-table__day-off-btn:focus
@@ -346,8 +356,9 @@ html, body {
   display: flex;
   position: absolute;
   width: 300px;
-  height: 75px;
-  margin-left: 220px;
+  height: 95px;
+    /*TODO: margin for pop up menu*/
+  margin-left: 0;
   overflow-scrolling: auto;
 
   background: #FAFAFA;
