@@ -6,6 +6,11 @@ html, body {
   background-color: #FFFFFF;
 }
 
+body {
+  min-height: 800px;
+  min-width: 1000px;
+}
+
 .cal-wind__authorization-bar {
   display: flex;
   font-family: Oxygen;
