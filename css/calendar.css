@@ -306,10 +306,16 @@ html, body {
   width: 100%;
   background-color: transparent;
   display: flex;
-  border: 2px solid white;
+  
   flex-direction: column;
   align-items: center;
   font-family: Oxygen;
+}
+.cal-wind__days-table__day-btn {
+border: 2px solid white;
+}
+.cal-wind__days-table__day-off-btn {
+  border: 2px solid #ECECEC;
 }
 
 .text {
@@ -330,15 +336,14 @@ html, body {
 }
 
 .current {
-  margin-top: 10%;
-  line-height: 150%;
-  width: 75px;
-  height: 72px;
+  padding: 10px;
+  margin: 0px;
+  
   color: #FFFFFF;
   border-radius: 50%;
   font-size: 48px;
   background-color: #FD5052;
-  margin-bottom: 1%;
+  
 }
 
 .cal-wind__days-table__day-btn__curr-circle {
