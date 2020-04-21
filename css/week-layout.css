@@ -270,6 +270,8 @@ html, body {
     font-size: 18px;
     color: #4F4F4F;
     border-style: solid;
+    display: flex;
+    justify-content: center;
     border-width: thin;
     border-left: none;
     padding-left: 2%;
@@ -281,6 +283,8 @@ html, body {
     font-family: Oxygen;
     text-align: center;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
     color: #4F4F4F;
     border-style: solid;
     border-width: thin;
