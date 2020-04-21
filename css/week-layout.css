@@ -246,15 +246,23 @@ html, body {
 }
 
 .events-wind__weekdays-bar__wkd, .events-wind__weekdays-bar__wkd__last {
-    font-family: Oxygen;
+    
     text-align: center;
     width: 20%;
-    font-size: 18px;
-    color: #4F4F4F;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-style: solid;
     border-width: thin;
     border-left: none;
     border-top: none;
+}
+
+.events-wind__weekdays-bar__wkd-text {
+    font-size: 18px;
+    color: #4F4F4F;
+    font-family: Oxygen;
 }
 
 .events-wind__weekdays-bar__wkd-prev-btn {
