@@ -6,307 +6,291 @@
     <link rel="stylesheet" href="../css/calendar.css"/>
 </head>
 <body>
-<div class="cal-wind__authorization-bar">
-    <div class="cal-wind__auth-bar__employee">Employee</div>
-    <button class="cal-wind__auth-bar__employee-info-btn">
-        <img src="../images/3vectors.png" alt="three-vectors" id="three-vectors">
-        <div class="cal-wind__auth-bar__employee-info-btn__submenu">
-            <p class="info">Polina</p>
-            <p class="info">Polina</p>
-            <p class="info">admin</p>
+<div class="authorization-bar">
+    <div class="auth-bar__employee">Employee</div>
+    <button class="auth-bar__employee-info-btn">
+        <img src="../images/3vectors.png" alt="three-vectors" class="three-vectors">
+        <div class="auth-bar__employee-info-btn__submenu">
+            <p class="auth-bar__empl-info-btn__sub__info">Polina</p>
+            <p class="auth-bar__empl-info-btn__sub__info">Polina</p>
+            <p class="auth-bar__empl-info-btn__sub__info">admin</p>
             <button class="edit-info">edit</button>
             <button class="sign-out">sign out</button>
         </div>
     </button>
 </div>
-<div class="cal-wind__menu-bar">
-    <button class="cal-wind__menu-bar__button-year">2020
-        <img src="../images/Arrow-down.svg" alt="arrow-down" id="arrow-down-year">
-        <div class="cal-wind__menu-bar__year-submenu">
-            <p class="year">2019</p>
-            <p class="year">2019</p>
-            <p class="year">2019</p>
-            <p class="year">2019</p>
-            <p class="year">2019</p>
-        </div>
+<div class="menu-bar">
+    <div class="menu-bar__button-year">2020</div>
+    <button class="menu-bar__button-month">February</button>
+    <button class="menu-bar__button-month">March</button>
+    <button class="menu-bar__button-month">April</button>
+    <button class="menu-bar__new-event-button">New Event</button>
+    <button class="menu-bar__filter-btn">
+        <img src="../images/filter.svg" alt="filter" class="filter">Filter
+        <img src="../images/Arrow-down.svg" alt="arrow-down-filter" class="arrow-down-filter">
+        <div class="menu-bar__filter-btn__filter-submenu"></div>
     </button>
-    <button class="cal-wind__menu-bar__button-month">February</button>
-    <button class="cal-wind__menu-bar__button-month">March</button>
-    <button class="cal-wind__menu-bar__button-month">April</button>
-    <button class="cal-wind__up-bar__new-event-button">New Event</button>
-    <button class="cal-wind__up-bar__filter-btn">
-        <img src="../images/filter.svg" alt="filter" id="filter">Filter
-        <img src="../images/Arrow-down.svg" alt="arrow-down-filter" id="arrow-down-filter">
-        <div class="cal-wind__up-bar__filter-btn__filter-submenu">
-            <div class="filters">
-                <!--<button class="filter-private"></button>
-                <button class="filter-internal"></button>
-                <button class="filter-external"></button>
-                <button class="filter-correspondence"></button>-->
-            </div>
-        </div>
-    </button>
-    <button class="cal-wind__menu-bar__mapping-btn">
-        <img src="../images/month.svg" alt="month" id="month">Month<img src="../images/Arrow-down.svg" alt="arrow-down"
-                                                              id="arrow-down-month">
-        <div class="cal-wind__menu-bar__mapping-btn__map-submenu"></div>
+    <button class="menu-bar__mapping-btn">
+        <img src="../images/month.svg" alt="month" class="month">Month
+        <img src="../images/Arrow-down.svg" alt="arrow-down" class="arrow-down-month">
+        <div class="menu-bar__mapping-btn__map-submenu"></div>
     </button>
 </div>
-<div class="cal-wind__days-table__wkd-bar">
-    <div class="cal-wind__weekdays-bar__wkd">mon</div>
-    <div class="cal-wind__weekdays-bar__wkd">tue</div>
-    <div class="cal-wind__weekdays-bar__wkd">wed</div>
-    <div class="cal-wind__weekdays-bar__wkd">thu</div>
-    <div class="cal-wind__weekdays-bar__wkd">fri</div>
-    <div class="cal-wind__weekdays-bar__day-off">sat</div>
-    <div class="cal-wind__weekdays-bar__day-off">sun</div>
+<div class="days-table__wkd-bar">
+    <div class="weekdays-bar__wkd">mon</div>
+    <div class="weekdays-bar__wkd">tue</div>
+    <div class="weekdays-bar__wkd">wed</div>
+    <div class="weekdays-bar__wkd">thu</div>
+    <div class="weekdays-bar__wkd">fri</div>
+    <div class="weekdays-bar__day-off">sat</div>
+    <div class="weekdays-bar__day-off">sun</div>
 </div>
-<div class="cal-wind__days-table">
-    <div class="cal-wind__days-table__week">
-        <div class="cal-wind__days-table__day"></div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+<div class="days-table">
+    <div class="days-table__week">
+        <div class="days-table__day"></div>
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">1</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">2</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">3</p>
                 </div>
-                <div class="cal-wind__days-table__day-btn__circle"></div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-btn__busy-circle"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">4</p>
                 </div>
-                <div class="cal-wind__days-table__day-btn__circle"></div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-btn__busy-circle"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">5</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">6</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
     </div>
-    <div class="cal-wind__days-table__week">
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+    <div class="days-table__week">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">7</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">8</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">9</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="current">10</p>
                 </div>
-                <div class="cal-wind__days-table__day-btn__circle"></div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-btn__busy-circle"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">11</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">12</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">13</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
     </div>
-    <div class="cal-wind__days-table__week">
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+    <div class="days-table__week">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">14</p>
                 </div>
-                <div class="cal-wind__days-table__day-btn__circle"></div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-btn__busy-circle"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">15</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">16</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">17</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">18</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">19</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">20</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
     </div>
-    <div class="cal-wind__days-table__week">
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+    <div class="days-table__week">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">21</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">22</p>
                 </div>
-                <div class="cal-wind__days-table__day-btn__circle"></div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-btn__busy-circle"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">23</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">24</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">25</p>
                 </div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">26</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day-off">
-            <button class="cal-wind__days-table__day-off-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+        <div class="days-table__day-off">
+            <button class="days-table__day-off-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">27</p>
                 </div>
-                <div class="cal-wind__days-table__day-btn__circle"></div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-btn__busy-circle"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
     </div>
-    <div class="cal-wind__days-table__week">
-        <div class="cal-wind__days-table__day">
-            <button class="cal-wind__days-table__day-btn">
-                <div class="cal-wind__days-table__day-btn__text-container">
+    <div class="days-table__week">
+        <div class="days-table__day">
+            <button class="days-table__day-btn">
+                <div class="days-table__day-btn__text-container">
                     <p class="text">28</p>
                 </div>
-                <div class="cal-wind__days-table__day-submenu"></div>
+                <div class="days-table__day-submenu"></div>
             </button>
         </div>
-        <div class="cal-wind__days-table__day"></div>
-        <div class="cal-wind__days-table__day"></div>
-        <div class="cal-wind__days-table__day"></div>
-        <div class="cal-wind__days-table__day"></div>
-        <div class="cal-wind__days-table__day-off"></div>
-        <div class="cal-wind__days-table__day-off"></div>
+        <div class="days-table__day"></div>
+        <div class="days-table__day"></div>
+        <div class="days-table__day"></div>
+        <div class="days-table__day"></div>
+        <div class="days-table__day-off"></div>
+        <div class="days-table__day-off"></div>
     </div>
 </div>
 </body>
